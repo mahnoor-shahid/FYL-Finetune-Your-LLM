@@ -6,7 +6,6 @@
 [![Transformers](https://img.shields.io/badge/🤗%20Transformers-Trainer-FFD21E)](https://huggingface.co/docs/transformers)
 [![Datasets](https://img.shields.io/badge/🤗%20Datasets-Hub-FFD21E)](https://huggingface.co/docs/datasets)
 [![scikit-learn](https://img.shields.io/badge/Metrics-scikit--learn-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
-[![Config](https://img.shields.io/badge/Config-one%20JSON%20file-000000?logo=json&logoColor=white)](config.json)
 [![Classification](https://img.shields.io/badge/Classification-ready-success)](#features)
 [![SFT · LoRA · DPO](https://img.shields.io/badge/SFT%20·%20LoRA%20·%20DPO-on%20the%20roadmap-lightgrey)](#roadmap)
 

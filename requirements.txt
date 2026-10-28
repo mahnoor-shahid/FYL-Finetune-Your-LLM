@@ -1,0 +1,62 @@
+# PyTorch CUDA 13.0 wheels (RTX 50-series / Blackwell; needs NVIDIA driver >= 580)
+--extra-index-url https://download.pytorch.org/whl/cu130
+
+# ===== Core data science =====
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+tqdm
+
+# ===== Notebooks =====
+jupyter
+ipykernel
+ipywidgets
+
+# ===== Utilities =====
+python-dotenv
+pydantic
+requests
+httpx
+tenacity
+rich
+
+# ===== LLM provider APIs =====
+anthropic
+openai
+google-genai
+# Skip the two malicious releases of 24 March 2026
+litellm!=1.82.7,!=1.82.8
+tiktoken
+
+# ===== Structured generation / prompt programming =====
+dspy[deno,optuna]==3.3.1   # deno: code sandbox, optuna: Bayesian optimiser (MIPROv2)
+
+# ===== Deep learning / Transformers =====
+# Pinned with "+cu130" so pip always installs the CUDA build, never the CPU-only one
+# (a plain "torch" is satisfied by an already-installed CPU build)
+torch==2.14.1+cu130
+transformers
+datasets
+tokenizers
+accelerate
+safetensors
+sentencepiece
+huggingface_hub
+evaluate
+peft
+trl
+sentence-transformers
+
+# ===== Agentic AI / RAG =====
+langchain
+langchain-anthropic
+langchain-openai
+langchain-community
+langgraph
+llama-index
+mcp
+chromadb
+faiss-cpu

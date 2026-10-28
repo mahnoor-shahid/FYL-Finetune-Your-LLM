@@ -1,0 +1,25 @@
+{
+  "model": {
+    "name": "distilbert-base-uncased"
+  },
+  "dataset": {
+    "name": "google-research-datasets/poem_sentiment",
+    "subset": "default",
+    "text_column": "verse_text",
+    "label_column": null
+  },
+  "training": {
+    "learning_rate": 5e-5,
+    "batch_size": 32,
+    "num_epochs": 10,
+    "weight_decay": 0.01,
+    "max_length": 128,
+    "early_stopping_patience": 3,
+    "class_weights": true
+  },
+  "output": {
+    "show_plots": false,
+    "push_to_hub": false,
+    "hub_model_id": "your-username/distilbert-poem-sentiment"
+  }
+}
